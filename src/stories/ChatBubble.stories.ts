@@ -25,19 +25,22 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
+export const LeftChat: Story = {
   args: {
-    text: 'Hello, I am looking for the latest trending truck toy for my 5 year old grandson.',
+    text: faker.lorem.lines({ min: 1, max: 3 }),
     dateTime: faker.date.past(),
     imgUrl: faker.image.avatar()
   },
 };
 
-// export const Secondary: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
+export const RightChat: Story = {
+  args: {
+    invertedAlignment: true,
+    text: faker.lorem.lines({ min: 1, max: 3 }),
+    dateTime: faker.date.past(),
+    imgUrl: faker.image.avatar()
+  },
+};
 
 // export const Large: Story = {
 //   args: {

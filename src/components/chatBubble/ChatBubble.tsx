@@ -21,7 +21,7 @@ interface ChatBubbleProps {
 }
 
 /**
- * Primary UI component for user interaction
+ * Primary UI component for a chat bubble
  */
 export const ChatBubble = ({
   invertedAlignment = false,
@@ -41,7 +41,7 @@ export const ChatBubble = ({
         )}
         <div className="grid">
           <div className="w-max max-w-lg">
-            <div className={`px-3.5 py-2 bg-gray-100 rounded-3xl ${bubbleTailClass} items-center gap-3 inline-flex`}>
+            <div className={`px-3.5 py-2 bg-gray-100 rounded-3xl ${bubbleTailClass} items-center gap-3`}>
               <h5 className="text-gray-900 text-sm font-normal leading-snug">{text}</h5>
             </div>
             <div className={`items-center inline-flex mb-2.5 w-full ${alignmentClass}`}>
