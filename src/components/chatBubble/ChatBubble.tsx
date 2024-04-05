@@ -1,4 +1,5 @@
 import React from 'react';
+import { format } from 'date-fns';
 
 interface ChatBubbleProps {
   /**
@@ -44,7 +45,7 @@ export const ChatBubble = ({
               <h5 className="text-gray-900 text-sm font-normal leading-snug">{text}</h5>
             </div>
             <div className="justify-end items-center inline-flex mb-2.5">
-              <h6 className="text-gray-500 text-xs font-normal leading-4 py-1">{dateTime.toDateString()}</h6>
+              <h6 className="text-gray-500 text-xs font-normal leading-4 py-1">{format(dateTime, 'h:mm b')}</h6>
             </div>
           </div>
         </div>
