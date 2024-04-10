@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
-import { ChatBubble } from '@/components/chatBubble/ChatBubble';
+import { ChatBubble } from '@/components/ChatBubble';
 import { faker } from '@faker-js/faker';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export

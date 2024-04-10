@@ -35,7 +35,7 @@ export const ChatBubble = ({
 
   return (
     <div className="w-full">
-      <div className="flex gap-2.5 mb-4 items-start">
+      <div className={`flex gap-2.5 mb-4 items-start ${alignmentClass}`}>
         {!invertedAlignment && (
           <img src={imgUrl} alt="Profile image" className="w-10 h-11 rounded-full" />
         )}
